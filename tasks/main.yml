@@ -1,0 +1,21 @@
+---
+# tasks file for ansible-openstack-memcached
+- name: Install OpenStack Memcached packages
+  yum:
+    name: "{{ memcached_pkgs }}"
+    state: present
+
+- name: Copy Memcached configuration in place
+  template:
+    src: sysconfig-memcached.j2
+    dest: /etc/sysconfig/memcached
+  notify: restart memcached
+
+# Restart if the config has been updated
+- meta: flush_handlers
+
+- name: Ensure Memcached is started and enabled
+  service:
+    name: memcached
+    state: started
+    enabled: true

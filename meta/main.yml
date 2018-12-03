@@ -1,0 +1,21 @@
+---
+galaxy_info:
+  author: John Favorite
+  description: Ansible role to install and configure Memcached for OpenStack.
+  company: none
+
+  license: license (GPLv2, CC-BY, etc)
+
+  min_ansible_version: 2.4
+
+  platforms:
+    - name: EL
+      versions:
+        - 7
+
+  galaxy_tags:
+    - openstack
+    - rocky
+    - memcached
+
+dependencies: []
