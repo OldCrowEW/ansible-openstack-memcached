@@ -1,6 +1,6 @@
 # Role Name
 
-https://travis-ci.org/OldCrowEW/ansible-openstack-memcached.svg?branch=master
+[![Build Status](https://travis-ci.org/OldCrowEW/ansible-openstack-memcached.svg?branch=master)](https://travis-ci.org/OldCrowEW/ansible-openstack-memcached)
 
 Ansible role to install and configure Memcached for OpenStack. This follows the install guide for better or worse :D
 
